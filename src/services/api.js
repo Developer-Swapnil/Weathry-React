@@ -11,13 +11,13 @@ export const getWeather = async (city) => {
     );
     return response.data;
   } catch (error) {
-    console.log("Error while calling the api", error.message);
+    // console.log("Error while calling the api", error.message);
     return error.message;
   }
 };
 
 export const getWeatherDays = async (city) => {
-  console.log(city);
+  // console.log(city);
   try {
     // let response = await axios.get(`${API_URL}?q=${city}&appid=${API_KEY}&units=metric`)
     // let response = await axios.get(`${API_URL2}?q=${city}&appid=${API_KEY}`)
@@ -27,16 +27,22 @@ export const getWeatherDays = async (city) => {
     );
     return response.data;
   } catch (error) {
-    console.log("Error while calling the api", error.message);
+    // console.log("Error while calling the api", error.message);
     return error.message;
   }
 };
 
 export const getAirPollution = async (city) => {
+  // console.log(city);
   try {
+    const config = {
+      headers: { "X-Api-Key": "bQ9KDe55MLHJ+CKNeHrhpg==r8DlWzYCmRRjxn5m" },
+    };
     let response = await axios.get(
-      `https://api.weatherbit.io/v2.0/current/airquality?city=${city}&key=3bb02cc6d35140628553a06dc2783971`
+      `https://api.api-ninjas.com/v1/airquality?city=${city}`,
+      config
     );
+    // console.log(response);
     return response.data;
   } catch (error) {
     console.log("Error while calling the api", error.message);
