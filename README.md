@@ -9,7 +9,7 @@ Powered by the OpenWeather API, Weathry ensures accurate and up-to-date weather 
 
 https://weathry-weather-app.netlify.app/
 
-![](./frontend/components/ScreenShots/Wooble-4.png)
+![](https://github.com/Developer-Swapnil/Weathry-React/blob/90ae40e561b47274c3ce44bbfb0feba3a5de1196/src/Images/Weathry-1.png)
 
 ## Run Locally
 
